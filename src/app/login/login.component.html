@@ -1,0 +1,18 @@
+<div>
+  <label for="userid">User ID:</label>
+  <input type="text" id="userid" [(ngModel)]="userid" (input)="onUserIdInputChange()" pattern="[0-9]{8}" maxlength="8" required />
+
+  <br />
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" [(ngModel)]="password" (input)="onPasswordInputChange()" [disabled]="isLoginDisabled" required />
+
+  <br />
+
+  <button (click)="login()" [disabled]="isLoginDisabled">Login</button>
+
+  <br />
+  <div>
+    <a href="http://localhost:4200/forgot" (click)="forgotCredentials()">Forgot Password/ID?</a>
+  </div>
+</div>

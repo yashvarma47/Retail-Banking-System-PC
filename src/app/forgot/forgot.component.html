@@ -1,0 +1,12 @@
+<div class="forgot-container">
+    <h2>Retrive ID/Password</h2>
+    <div class="form-group">
+      <label for="dropdown">Select an option:</label>
+      <select id="dropdown" [(ngModel)]="selectedOption" (change)="onOptionSelected($event)">
+        <option *ngFor="let option of dropdownOptions" [value]="option">{{ option }}</option>
+      </select>
+      <button (click)="onNextClick()">Next</button>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  

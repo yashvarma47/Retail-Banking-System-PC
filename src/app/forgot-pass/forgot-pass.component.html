@@ -1,0 +1,25 @@
+<div class="forget-pass-container">
+    <h2>Customer Details</h2>
+    <div class="form-group">
+      <label for="customerId">Customer ID:</label>
+      <input type="number" id="customerId" [(ngModel)]="customerId" name="customerId" required/>
+    </div>
+  
+    <div class="form-group">
+      <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" [(ngModel)]="dob" name="dob" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="panNumber">PAN Number:</label>
+      <input type="text" id="panNumber" [(ngModel)]="panNumber" name="panNumber" maxlength="10" required=""/>
+    </div>
+  
+    <div class="form-group">
+      <label for="mobileNumber">Mobile Number:</label>
+      <input type="text" id="mobileNumber" [(ngModel)]="mobileNumber" name="mobileNumber" maxlength="10" required=""/>
+    </div>
+  <router-outlet></router-outlet>
+    <button (click)="onSubmit()">Submit</button>
+  </div>
+  

@@ -1,0 +1,20 @@
+<div>
+    <h2>Retrive ID</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div>
+        <label for="pan">PAN:</label>
+        <input type="text" id="pan" [(ngModel)]="pan" name="pan" required>
+      </div>
+      <div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" [(ngModel)]="dob" name="dob" required>
+      </div>
+      <div>
+        <label for="mobno">Mobile Number:</label>
+        <input type="tel" id="mobno" [(ngModel)]="mobno" name="mobno" required>
+      </div>
+      <!-- <router-outlet></router-outlet> -->
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
